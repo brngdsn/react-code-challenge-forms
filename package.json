@@ -25,6 +25,9 @@
     "chromium": "^1.0.2",
     "css-loader": "0.28.1",
     "dotenv": "4.0.0",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-15": "^1.1.0",
+    "enzyme-to-json": "^3.3.4",
     "eslint": "3.19.0",
     "eslint-config-react-app": "^1.0.4",
     "eslint-loader": "1.7.1",
@@ -43,6 +46,8 @@
     "promise": "7.1.1",
     "react-dev-utils": "^3.0.0",
     "react-error-overlay": "^1.0.7",
+    "react-test-renderer": "15.6.2",
+    "redux-mock-store": "^1.5.3",
     "style-loader": "0.17.0",
     "sw-precache-webpack-plugin": "0.9.1",
     "testcafe": "^0.20.4",
@@ -63,6 +68,10 @@
     "redux-thunk": "^2.3.0"
   },
   "jest": {
+    "setupTestFrameworkScriptFile": "<rootDir>src/enzymeSetup/setupEnzyme.js",
+    "testPathIgnorePatterns": [
+      "<rootDir>/src/enzymeSetup/"
+    ],
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}"
     ],
